@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/bertmuc/SALLI/catkin_ws/src/pointcloudTraj/Utils/pose_utils/build/devel/setup.sh

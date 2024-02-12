@@ -1,0 +1,8 @@
+
+<launch>
+	<arg name="output" default="screen"/>
+
+	<node name="vfh_transformation" pkg="transformation" type="vfh_transformation_node" output="$(arg output)">
+
+	</node>
+</launch>

@@ -1,0 +1,18 @@
+<launch> 
+
+<!-- AirSim ROS Wrapper -->
+	<include file="$(find airsim_ros_pkgs)/launch/airsim_node_salli.launch"/>
+<!-- Vehicle Dynamic Constraints -->
+	<include file="$(find airsim_ros_pkgs)/launch/dynamic_constraints.launch"/>
+<!-- Simple PID Position Controller -->
+	<include file="$(find airsim_ros_pkgs)/launch/position_controller_simple.launch"/>
+<!-- pointcloudtrajectory-->
+        <include file="$(find pointcloudTraj)/Planner/launch/salli_clean_demo.launch"/>
+<!-- Target Position -->
+  	<include file="$(find target_position)/launch/target_position.launch"/>
+<!-- Depth image -->
+  	<include file="$(find target_position)/launch/depth_image.launch"/>
+<!-- ewok replanning rrt original-->
+        <include file="$(find ewok-replanning-rrt_original)/Planner/launch/salli_trajectory_replanning_simulation_rrt.launch"/>	
+
+</launch>

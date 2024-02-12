@@ -1,0 +1,8 @@
+prefix=/home/bertmuc/SALLI/catkin_ws/devel_isolated/vfh3d
+
+Name: vfh3d
+Description: Description of vfh3d
+Version: 0.0.0
+Cflags: -I/home/bertmuc/SALLI/catkin_ws/devel_isolated/vfh3d/include -I/home/bertmuc/SALLI/catkin_ws/src/vfh3d/include
+Libs: -L${prefix}/lib 
+Requires: octomap_msgs octomap_ros roscpp geometry_msgs message_runtime

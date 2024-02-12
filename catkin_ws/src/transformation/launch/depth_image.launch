@@ -1,0 +1,7 @@
+<launch>
+	<arg name="output" default="screen"/>
+
+	<node name="depth_image" pkg="transformation" type="depth_image_node" output="$(arg output)">
+
+	</node>
+</launch>

@@ -1,0 +1,47 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/bertmuc/SALLI/catkin_ws/src/pointcloudTraj/Planner/src/bezier_base.cpp" "/home/bertmuc/SALLI/catkin_ws/build_isolated/pointcloudTraj/CMakeFiles/sim_planning_demo.dir/src/bezier_base.cpp.o"
+  "/home/bertmuc/SALLI/catkin_ws/src/pointcloudTraj/Planner/src/corridor_finder.cpp" "/home/bertmuc/SALLI/catkin_ws/build_isolated/pointcloudTraj/CMakeFiles/sim_planning_demo.dir/src/corridor_finder.cpp.o"
+  "/home/bertmuc/SALLI/catkin_ws/src/pointcloudTraj/Planner/src/sim_planning_demo.cpp" "/home/bertmuc/SALLI/catkin_ws/build_isolated/pointcloudTraj/CMakeFiles/sim_planning_demo.dir/src/sim_planning_demo.cpp.o"
+  "/home/bertmuc/SALLI/catkin_ws/src/pointcloudTraj/Planner/src/traj_optimizer.cpp" "/home/bertmuc/SALLI/catkin_ws/build_isolated/pointcloudTraj/CMakeFiles/sim_planning_demo.dir/src/traj_optimizer.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "DISABLE_LIBUSB_1_0"
+  "DISABLE_PCAP"
+  "DISABLE_PNG"
+  "ROSCONSOLE_BACKEND_LOG4CXX"
+  "ROS_BUILD_SHARED_LIBS=1"
+  "ROS_PACKAGE_NAME=\"pointcloudTraj\""
+  "qh_QHpointer"
+  "vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"
+  "vtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"
+  )
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/include/vtk-7.1"
+  "/usr/include/freetype2"
+  "/home/bertmuc/SALLI/catkin_ws/src/pointcloudTraj/Planner/include"
+  "/home/bertmuc/SALLI/catkin_ws/devel_isolated/quadrotor_msgs/include"
+  "/home/bertmuc/SALLI/catkin_ws/src/pointcloudTraj/Utils/kdtree/include"
+  "/opt/ros/noetic/include"
+  "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/usr/include/eigen3"
+  "/usr/include/pcl-1.10"
+  "/usr/include/ni"
+  "/usr/include/openni2"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

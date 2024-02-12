@@ -1,0 +1,36 @@
+<launch>
+	<arg name="output" default="screen"/>
+	<arg name="publish_clock" default="false"/>
+	<arg name="is_vulkan" default="true"/>
+	<arg name="host" default="localhost" />
+
+	<node name="airsim_node" pkg="airsim_ros_pkgs" type="airsim_node" output="$(arg output)">
+		<param name="is_vulkan" type="bool" value="false" /> 
+		<!-- ROS timer rates. Note that timer callback will be processed at maximum possible rate, upperbounded by the following ROS params -->
+		<param name="update_airsim_img_response_every_n_sec" type="double" value="0.05" /> 
+		<param name="update_airsim_control_every_n_sec" type="double" value="0.01" />
+		<param name="update_lidar_every_n_sec" type="double" value="0.1" />
+		<param name="publish_clock" type="bool" value="$(arg publish_clock)" />
+		<param name="host_ip" type="string" value="$(arg host)" />
+		
+		<!-- Remap to match standard ros convention -->
+		<remap from="/airsim_node/SALLI/zed_mini_left/Scene/camera_info"   to="/airsim_node/SALLI/zed_mini_left/camera_info" />
+		<remap from="/airsim_node/SALLI/zed_mini_right/DepthPlanar/camera_info"   to="/airsim_node/SALLI/zed_mini_right/camera_info" />
+		<!-- We want to create our own localization (onw tf tree) using e.g. cartographer, remap the reference localization -->
+
+		<!--remap from="/tf" to="/tf_airsim"/>
+		<remap from="/tf_static" to="/tf_static_airsim"/-->
+
+         <!--remap from="/airsim_node/SALLI/lidar/Lidar"    to="/airsim_node/SALLI/lidar/airsim_lidar" />
+		 <remap from="/airsim_node/SALLI/odom_local_ned"    to="/airsim_node/SALLI/airsim_odom_local_ned" /-->
+
+
+	</node>
+    <!--node pkg="tf2_ros" type="static_transform_publisher" name="Lidar_Loam_pub" args="0 0 0 0 0 0.7071 0.7071 SALLI/Lidar lidar_loam"/-->
+
+	<node pkg="tf2_ros" type="static_transform_publisher" name="Lidar_Loam_pub" args="0 0 0 0 0 3.14 SALLI/Lidar lidar_loam"/> <!-- place the `lidar_loam` frame at the origin of `SALLI/Lidar-->
+	<include file="$(find airsim_ros_pkgs)/launch/static_transforms.launch"/>
+
+
+
+</launch>

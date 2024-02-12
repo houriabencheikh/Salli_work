@@ -1,0 +1,2 @@
+Sophus:airsim_ros_pkgs:catkin_simple:octomap:pointcloudTraj/Planner:pointcloudTraj/Utils/kdtree:pointcloudTraj/Utils/odom_visualization:pointcloudTraj/Utils/pose_utils:pointcloudTraj/Utils/quadrotor_msgs:pointcloudTraj/Utils/waypoint_generator:transformation:vfh3d
+-G Unix Makefiles -DCATKIN_DEVEL_PREFIX=/home/bertmuc/SALLI/catkin_ws/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/bertmuc/SALLI/catkin_ws/install_isolated

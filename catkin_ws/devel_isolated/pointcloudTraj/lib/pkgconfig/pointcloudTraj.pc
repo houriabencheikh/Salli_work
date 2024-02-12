@@ -1,0 +1,8 @@
+prefix=/home/bertmuc/SALLI/catkin_ws/devel_isolated/pointcloudTraj
+
+Name: pointcloudTraj
+Description: Description of pointcloudTraj
+Version: 0.0.1
+Cflags: -I/home/bertmuc/SALLI/catkin_ws/src/pointcloudTraj/Planner/include
+Libs: -L${prefix}/lib 
+Requires: 

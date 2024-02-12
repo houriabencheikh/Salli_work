@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/bertmuc/SALLI/catkin_ws/devel_isolated/waypoint_generator/setup.sh

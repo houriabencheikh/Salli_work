@@ -1,0 +1,8 @@
+prefix=/home/bertmuc/SALLI/catkin_ws/install_isolated
+
+Name: pointcloudTraj
+Description: Description of pointcloudTraj
+Version: 0.0.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,33 @@
+<robot name="SALLI">
+<!-- DEFINE CONSTANTS -->
+  <material name="orange">
+    <color rgba="1.0 0.5 0.2 1" />
+  </material>
+  <material name="gray">
+    <color rgba="0.2 0.2 0.2 1" />
+  </material>
+<!-- DEFINE PARTS -->
+  <link name="base_link" />
+  <link name="SALLI"/>
+  <link name="SALLI/Lidar"/>
+  <!--link name="SALLI/Imu" /-->
+  <link name="camera" />
+  <!--link name="Lidar_loam" /-->
+
+<!-- DEFINE CONECTIONS -->
+  <joint name="camera/base_joint" type="fixed">
+    <parent link="camera" />
+    <child link="base_link" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+  <joint name="base/SALLI_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="SALLI" />
+    <origin xyz="0 0 0" rpy="1.5708 -1.5708 0" />
+  </joint>
+  <joint name="base/SALLI_Lidar_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="SALLI/Lidar" />
+    <origin xyz="0 0 0" rpy="1.5708 -1.5708 0" />
+  </joint>
+</robot>
